@@ -78,13 +78,86 @@ section{
 .middle-part{
     background-image: url(images/biography-bg.png);
 }
-.main-box {
-    display: grid;
-    Grid-gap: 5rem;
-    grid-template-columns: repeat (3,1fr);
-    }
- .main-box img {
-    Width:100%
+.latest-work {
+    background-image: url("images/latest-work-bg.png");
+    background-repeat: no-repeat;
+    height: 150px;
 }
-    
+.latest-work-inner {
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.latest-work-inner h2{
+    text-align: center;
+}
+.main-box {
+    grid-gap: 4rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.box-1, .box-2, .box-3 {
+    transition: 1s;
+} 
+
+.box-1:hover, .box-2:hover, .box-3:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 40px black;
+}
+
+.main-box img {
+    width: 100%;
+}
+.client-review {
+    margin: 2rem 0;
+    background-image: url("images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.last-work-inner {
+    height: 600px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.client-review {
+    transform: translateY(70%);
+}
+
+.last-work h2, small, p {
+    padding-top: 2rem;
+}
+
+.last-work-inner h2{
+    color: purple;
+}
+
+.button-link {
+    margin-top: 1rem;
+}
+
+.button-link-inner {
+    color: white;
+    padding: 1.5rem 5.3rem;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, lightsalmon, purple);;
+}
+
+.button-link-inner h5 {
+    font-size: 12px;
+}
+
+.button-link-inner h4 {
+    font-size: 20px;
+}
+footer h6 {
+    padding-top: 5rem;
+    text-align: center;
+}   
     
